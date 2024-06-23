@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import "./Home.css"
 import TodoCard from '../component/TodoCard'
 
+import toast, { Toaster } from 'react-hot-toast'
+
 function Home() {
 
     const [todoList, setTodoList] = useState([])
@@ -19,7 +21,10 @@ function Home() {
                     )
                 }
 
-                <p>Here You Can Add New Task</p>
+                {
+                    todoList.length === 0 ?  <p>No task to show, Please add new task</p> : null
+                }
+
             </div>
 
 
@@ -37,11 +42,19 @@ function Home() {
                     alt='add-button'
                     className='increment-btn'
                     onClick={() => {
+
+                        if(newTask === ""){
+                            toast.error("Task Cannot be empty...")
+                            return
+                        }
+
                         setTodoList([...todoList, newTask])
                         setNewTask("")
+                        toast.success("Task Added Successfully ...")
                     }} />
 
             </div>
+            <Toaster/>
         </>
     )
 }
