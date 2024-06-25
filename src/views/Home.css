@@ -6,9 +6,10 @@
     margin: 10px auto;
     background-color: whitesmoke;
     height: 450px;
-    width: 350px;
+    width: 500px;
     border-radius: 20px;
     overflow-y: scroll;
+    padding:20px;
 }
 
 .input-container{
@@ -28,3 +29,15 @@
     cursor: pointer;
 }
 
+.category{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+
+.task{
+    text-align: center;
+}
