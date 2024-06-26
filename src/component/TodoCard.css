@@ -1,10 +1,12 @@
 .todo-card{
     background-color: #3b3e3e;
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 20px;
     margin: 20px;
     position: relative;
     box-shadow: 3px 3px 5px black;
+    display: flex;
+    align-items: center;
 }
 
 .todo-card-category{
@@ -16,10 +18,43 @@
     padding:1px 5px ;
     width: 80px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 5px;
 
 }
 
 .task{
     color: white;
+}
+
+@keyframes delete-Img{
+    0%{
+        transform: rotate(-25deg);
+    }
+
+    25%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(25deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(-25deg);
+    }
+}
+
+.delete{
+    padding:0;
+    padding-right: 10px;
+}
+
+.delete:hover{
+    animation: delete-Img;
+    animation-duration: 0.5s;
+    animation-iteration-count:infinite ;
 }

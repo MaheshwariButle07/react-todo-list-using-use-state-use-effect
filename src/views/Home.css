@@ -8,7 +8,6 @@
     background-color: #282b2c;
     height: 450px;
     width: 500px;
-    border-radius: 20px;
     overflow-y: scroll;
     padding:20px;
 }
@@ -32,7 +31,6 @@
 
 .category{
     padding: 5px 10px;
-    border-radius: 10px;
     font-size: 20px;
     border: 1px solid #ccc;
     margin: 20px;
