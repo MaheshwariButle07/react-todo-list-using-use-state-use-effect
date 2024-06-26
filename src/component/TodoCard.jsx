@@ -21,7 +21,7 @@ function TodoCard({task,category}) {
   }  
 
   return (
-    <div className='todo-card'>{task}  
+    <div className='todo-card'> <span className='task'>{task}</span> 
     <span className='todo-card-category'  style={{backgroundColor:CATEGORY_COLORS[category]}}> {CATEGORY_EMOGI_MAP[category]} {category}</span></div>
   )
 }

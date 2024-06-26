@@ -12,42 +12,26 @@ function Home() {
 
     const [category, setCategory] = useState("")
 
-    useEffect(()=>{
+    useEffect(() => {
         const savedList = localStorage.getItem("todoList")
 
-        if(savedList){
+        if (savedList) {
             setTodoList(JSON.parse(savedList))
         }
-    },[])
+    }, [])
 
-   useEffect(()=>{
-    if(todoList.length===0) return
+    useEffect(() => {
+        if (todoList.length === 0) return
 
-    localStorage.setItem("todoList",JSON.stringify(todoList))
-   },[todoList])
+        localStorage.setItem("todoList", JSON.stringify(todoList))
+    }, [todoList])
 
     return (
         <>
 
             <h1 className='heading'>Todo App</h1>
+
             <div className='todo-container'>
-
-                {(todoList.map((todoItems, i) => {
-
-                    const { task, category } = todoItems
-
-                    return <TodoCard key={i} task={task} category={category} />
-                }))
-
-                }
-
-                {
-                    todoList.length === 0 ? <p className='task'>No task to show, Please add new task</p> : null
-                }
-
-            </div>
-
-
 
             <div className='input-container'>
 
@@ -113,6 +97,30 @@ function Home() {
                     }} />
 
             </div>
+
+            <hr /><br/>
+
+
+           
+
+                {(todoList.map((todoItems, i) => {
+
+                    const { task, category } = todoItems
+
+                    return <TodoCard key={i} task={task} category={category} />
+                }))
+
+                }
+
+                {
+                    todoList.length === 0 ? <p className='task'>No task to show, Please add new task</p> : null
+                }
+
+            </div>
+
+
+
+
             <Toaster />
         </>
     )
