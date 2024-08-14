@@ -76,12 +76,12 @@ function Home() {
                     <input
                         placeholder="Write Your List Item's Here" className='input-box'
                         value={newTask}
-                        onChange={(e => setNewTask(e.target.value))} />
+                        onChange={(e) => setNewTask(e.target.value)} />
 
                     <select
                         className='category'
                         value={category}
-                        onChange={(e => setCategory(e.target.value))}>
+                        onChange={(e) => setCategory(e.target.value)}>
 
                         <option value="">
                             Category
