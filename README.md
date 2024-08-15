@@ -16,12 +16,12 @@ Live Demo : [Click Here](https://todo-list-using-use-state-use-effect.netlify.ap
    
    ### Instalition
 
-       1. Clone the Repository
+  1. Clone the Repository
        ```
           git clone https://github.com/MaheshwariButle07/react-todo-list-using-use-state-use-effect
        ```
 
-       2. Install Dependencies
+  2. Install Dependencies
        ```
           npm install
        ```
