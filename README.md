@@ -13,18 +13,18 @@ This is an Todo List application which is build using ReactJS. It will help user
 Live Demo : [Click Here](https://todo-list-using-use-state-use-effect.netlify.app)
 
 ## Contribute
+   
+   ### Instalition
 
-  ### Instalition
+       1. Clone the Repository
+       ```
+          git clone https://github.com/MaheshwariButle07/react-todo-list-using-use-state-use-effect
+       ```
 
-  1. Clone the Repository
-   ```
-      git clone https://github.com/MaheshwariButle07/react-todo-list-using-use-state-use-effect
-   ```
-
-  3. Install Dependencies
-   ```
-      npm install
-   ```
+       2. Install Dependencies
+       ```
+          npm install
+       ```
   
 
 
