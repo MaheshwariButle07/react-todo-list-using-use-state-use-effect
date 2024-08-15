@@ -8,7 +8,7 @@ This is an Todo List application which is build using ReactJS. It will help user
 - Add Task
 - Remove Task
 
-Click Here : [Live Demo](https://todo-list-using-use-state-use-effect.netlify.app)
+Live Demo : [Click Here](https://todo-list-using-use-state-use-effect.netlify.app)
 
 
 
